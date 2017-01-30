@@ -2,11 +2,10 @@ const env = process.env.NODE_ENV || 'development';
 
 const config = {
   env,
-  name: 'React Starter App',
-  github: 'https://github.com/mksarge/react-starter-app',
+  name: 'Michael Sargent',
+  github: 'https://github.com/mksarge/mksarge.com',
   routes: [
     { path: '/', name: 'home' },
-    { path: '/docs', name: 'docs' },
     { path: '/blog', name: 'blog' },
   ],
 };

@@ -6,14 +6,12 @@ import Layout from './components/Layout';
 import Post from './components/Post';
 import HomePage from './pages/home';
 import BlogPage from './pages/blog';
-import DocsPage from './pages/docs';
 import ErrorPage from './pages/error';
 
 render(
   <Router history={browserHistory}>
     <Route path="/" component={Layout}>
       <IndexRoute component={HomePage} />
-      <Route path="docs" component={DocsPage} />
       <Route path="blog" >
         <IndexRoute component={BlogPage} />
         <Route path=":postId" component={Post} />
