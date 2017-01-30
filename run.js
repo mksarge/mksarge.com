@@ -16,13 +16,12 @@ const ejs = require('ejs');
 const webpack = require('webpack');
 
 const config = {
-  title: 'React Starter App',
-  url: 'https://react-starter-app.firebaseapp.com',
-  project: 'react-starter-app',
+  title: 'Michael Sargent',
+  url: 'https://mksarge.com',
+  project: 'mksarge-personal',
   trackingID: '',
   routes: [
     '/',
-    '/docs',
     '/blog',
   ],
 };
