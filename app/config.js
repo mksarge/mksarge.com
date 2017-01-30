@@ -8,6 +8,24 @@ const config = {
     { path: '/', name: 'home' },
     { path: '/blog', name: 'blog' },
   ],
+  headerText: [
+    {
+      text: 'building something cool with React and Node.js.',
+      color: '#f90',
+    },
+    {
+      text: 'living in beautiful Vancouver, BC.',
+      color: '#7ea',
+    },
+    {
+      text: 'solving interesting problems for ClassPortal.',
+      color: '#f7c',
+    },
+    {
+      text: 'reading about the latest news in web tech.',
+      color: '#f67',
+    },
+  ],
   projects: [
     {
       name: 'ClassPortal',
