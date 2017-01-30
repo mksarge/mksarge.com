@@ -3,12 +3,11 @@ import Header from '../Header';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 import css from './Layout.css';
-import config from '../../config';
 
 const Layout = (props) => (
   <div className={css.layout} >
-    <Header text={config.name} />
     <Navbar />
+    <Header />
     <div className={css.page}>
       {props.children}
     </div>

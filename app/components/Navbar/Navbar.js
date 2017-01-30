@@ -11,16 +11,17 @@ const renderLinks = () => config.routes.map((link) => {
     className={css.navblock}
     to={link.path}
     style={currentPath === link.name
-      ? { background: '#236', color: 'white' }
-      : { background: 'none', color: '#24b' }
-    }
-  >{link.name}
+      ? { background: 'rgba(255, 255, 255, 0.2)' }
+      : {}}
+  > {link.name}
   </Link >);
 });
 
 const Navbar = () => (
-  <div className={css.navbar} >
-    {renderLinks()}
+  <div className={css.navbar}>
+    <div className={css.container}>
+      {renderLinks()}
+    </div>
   </div>
 );
 

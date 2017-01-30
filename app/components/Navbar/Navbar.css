@@ -1,32 +1,36 @@
 .navbar {
-  margin-bottom: 20px;
-  text-align: center;
-  background: #f0f4fa;
+  background: linear-gradient(90deg, #000, #457);
+}
+
+.container {
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px 0;
+  text-align: left;
+}
+
+.title {
+  float: left;
+  color: white;
 }
 
 .navblock {
   outline: none;
   display: inline-block;
-  padding: 0 25px;
-  margin: 0;
+  padding: 2px 20px;
+  padding-top: 0;
   text-transform: capitalize;
+  text-decoration: none !important;
+  color: white;
+  border-radius: 3px;
 }
 
-@media screen and (min-width: 450px) {
-  .navblock {
-    padding: 0 25px;
-    margin: 0 5px;
-  }
+.navblock:hover {
+  text-decoration: underline;
+  color: white;
 }
 
-@media screen and (min-width: 980px) {
-  .navbar {
-    text-align: right;
-    padding-right: 50px;
-  }
-
-  .navblock {
-    padding: 0 25px;
-    margin: 0 10px;
-  }
+.navblock:active {
+  text-decoration: none;
 }
