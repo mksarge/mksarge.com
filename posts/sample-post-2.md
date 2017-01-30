@@ -1,9 +1,7 @@
 ---
 title: Sample Post 2
 subtitle: Lorem Ipsum
-url: sample-post-2
-tags: tag1, tag2, tag3
-date: Sunday, 01. January 2017 12:00AM
+date: "2017-01-02"
 ---
 
 <br>

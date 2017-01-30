@@ -10,6 +10,7 @@ const renderPosts = () => posts.slice(0, 3).map((post) => (
     <h5 className={css.link}>
       <Link to={`/blog/${post.url}`}>{post.title}</Link>
     </h5>
+    <h6 className={css.subtext}>{post.formattedDate}</h6>
   </li>));
 
 const renderProjects = () => config.projects.map((project) => (

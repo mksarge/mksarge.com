@@ -1,9 +1,7 @@
 ---
 title: Sample Post 1
 subtitle: Hello world!
-url: sample-post-1
-tags: tag1, tag2, tag3
-date: Sunday, 01. January 2017 12:00AM
+date: "2017-01-01"
 ---
 
 # Heading h1
