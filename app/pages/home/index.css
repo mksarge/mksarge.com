@@ -1,0 +1,9 @@
+.link {
+  display: inline;
+}
+
+.subtext {
+  display: inline-block;
+  padding-left: 10px;
+  color: #78a;
+}
