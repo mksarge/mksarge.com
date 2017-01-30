@@ -1,24 +1,23 @@
 import React, { PropTypes } from 'react';
-import { Link } from 'react-router';
-import Corner from './Corner';
 import css from './Header.css';
-import config from '../../config';
-import { getRootPath } from '../../utils';
 
-const Header = (props) => {
-  const path = getRootPath();
-  return (
-    <div className={path === 'home' ? [css.header, css.header2].join(' ') : css.header}>
-      {path === 'home' && (<Corner link={config.github} />)}
-      <div className={css.title}>
-        <Link to="/">
-          {path === 'home' && (<img className={css.logo} src="react-logo.png" alt="" />)}
-          {props.text}
-        </Link>
+const Header = () => (
+  <div className={css.header} >
+    <div className={css.container}>
+      <div className={css.image}>
+        <img src="assets/profile.png" alt="" />
+      </div>
+      <div className={css.block}>
+        <p>
+          Hey, I&apos;m Michael. I&apos;m a software developer
+            working at&nbsp;
+            <a href="https://www.ubc.ca/" target="_blank" rel="noopener noreferrer">UBC</a>
+          , currently building cool things with React.
+          </p>
       </div>
     </div>
-  );
-};
+  </div>
+);
 
 Header.propTypes = {
   text: PropTypes.string,
