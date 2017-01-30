@@ -4,11 +4,6 @@ import posts from '../../posts';
 import Page from '../Page';
 import css from './Post.css';
 
-const renderTags = (tags) => {
-  const arr = tags.split(', ');
-  return arr.map((tag) => <p key={tag} className={css.tag}>{tag}</p>);
-};
-
 class Post extends React.Component {
   constructor() {
     super();
@@ -27,25 +22,14 @@ class Post extends React.Component {
     return (
       <Page title={this.state.post.title}>
         <div className={css.return}>
-          <Link to="/blog">← Return to Posts</Link>
-        </div>
-        <div className={css.header1}>
-          <h1>{this.state.post.title}</h1>
-          <h2>{this.state.post.subtitle}</h2>
-        </div>
-        <div className={css.header2}>
-          <div>
-            <p>Posted:</p>
-            <p className={css.date}>{this.state.post.date}</p>
-            <p>Tags:</p>
-            {this.state.post.tags && renderTags(this.state.post.tags)}
-          </div>
+          <Link to="/blog">← All Posts</Link>
         </div>
         <hr />
-        <div
-          className={css.post}
-          dangerouslySetInnerHTML={{ __html: this.state.post.html }}
-        />
+        <h1 className={css.title}>{this.state.post.title}</h1>
+        <p className={css.subtitle}>{this.state.post.subtitle}</p>
+        <hr />
+        <div className={css.body} dangerouslySetInnerHTML={{ __html: this.state.post.html }} />
+        <p className={css.date}>Posted on {this.state.post.formattedDate}.</p>
       </Page>
     );
   }
