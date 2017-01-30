@@ -3,7 +3,9 @@ const env = process.env.NODE_ENV || 'development';
 const config = {
   env,
   name: 'Michael Sargent',
-  github: 'https://github.com/mksarge/mksarge.com',
+  github: 'https://github.com/mksarge',
+  twitter: 'https://twitter.com/michaelksargent',
+  email: 'michael-sargent@hotmail.com',
   routes: [
     { path: '/', name: 'home' },
     { path: '/blog', name: 'blog' },

@@ -4,13 +4,21 @@ import config from '../../config';
 
 const Footer = () => (
   <footer className={css.footer}>
-    <p>
-      <a href={config.github}>GitHub</a>
-      &nbsp;&middot;&nbsp;
-      <a href={`${config.github}/issues`}>Report an issue</a>
-      &nbsp;&middot;&nbsp;
-      <a href={`${config.github}/fork`}>Contribute</a>
-    </p>
+    <div className={css.container}>
+      <p className={css.text}>
+        &copy; 2017 Michael Sargent
+        <br />
+        <a href={config.github}>
+          <img className={css.image} src="assets/github.png" alt="GitHub" />
+        </a>
+        <a href={config.twitter}>
+          <img className={css.image} src="assets/twitter.png" alt="Twitter" />
+        </a>
+        <a href={`mailto:${config.email}`}>
+          <img className={css.image} src="assets/email.png" alt="Email" />
+        </a>
+      </p>
+    </div>
   </footer>
 );
 

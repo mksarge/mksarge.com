@@ -1,10 +1,30 @@
 .footer {
   position: absolute;
+  bottom: 0;
   width: 100%;
   height: auto;
-  bottom: 0;
-  padding: 20px 0 15px;
   margin: 0 auto;
   text-align: center;
-  background-color: #f0f4fa;
+}
+
+.container {
+  width: 90%;
+  max-width: 700px;
+  padding: 3px 0 0;
+  margin: 0 auto;
+  border-top: 1px solid #abf;
+}
+
+.text {
+  font-weight: 400;
+  color: #229;
+}
+
+.text a {
+  color: #229;
+}
+
+.image {
+  padding: 0 5px;
+  max-height: 24px;
 }
