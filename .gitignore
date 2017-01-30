@@ -9,3 +9,9 @@ npm-debug.log
 
 # Firebase
 firebase-debug.log
+
+# Resume
+public/resume.pdf
+
+# Posts
+/posts

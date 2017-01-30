@@ -1,19 +1,14 @@
 {
-  "name": "react-starter-app",
+  "name": "mksarge.com",
   "version": "1.0.0",
   "author": "Michael Sargent",
-  "description": "boilerplate for static react applications",
+  "description": "personal website",
   "private": true,
   "license": "MIT",
-  "keywords": [
-    "static",
-    "react",
-    "boilerplate"
-  ],
   "repository": {
     "type": "git",
-    "homepage": "https://github.com/mksarge/react-starter-app",
-    "bugs": "https://github.com/mksarge/react-starter-app/issues"
+    "homepage": "https://github.com/mksarge/mksarge.com",
+    "bugs": "https://github.com/mksarge/mksarge.com/issues"
   },
   "engines": {
     "node": ">=6",
