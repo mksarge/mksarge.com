@@ -7,7 +7,7 @@ body,
   padding: 0 !important;
   margin: 0 !important;
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 h1,
@@ -19,16 +19,16 @@ h6,
 p,
 a,
 li {
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.8em;
   padding: 0;
   margin: 0;
   color: #000;
 }
 
-h1 { font-size: 2em; }
+h1 { font-size: 1.8em; }
 
-h2 { font-size: 1.7em; }
+h2 { font-size: 1.6em; }
 
 h3 { font-size: 1.4em; }
 
@@ -47,16 +47,19 @@ li {
 
 a,
 a:hover {
-  color: #24b;
+  color: #04f;
   font-weight: 500;
 }
 
+ul {
+  margin: 0;
+}
+
 hr {
-  margin: 30px 0 20px;
+  margin: 30px 0;
   border: 0;
-  height: 2px;
-  background: #cfd8fa;
-  background-image: linear-gradient(to right, #eef, #24b, #eef);
+  height: 1px;
+  background: #abf;
 }
 
 code {
@@ -76,13 +79,9 @@ blockquote {
   border-right: solid #f0f4fa 5px;
 }
 
-.header-anchor {
-  text-decoration: none;
-}
-
 @media screen and (min-width: 600px) {
   #app {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   pre,
