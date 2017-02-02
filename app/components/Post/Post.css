@@ -9,26 +9,32 @@
 .title {
   text-align: center;
   line-height: 1.5em;
-  font-weight: 400;
+  font-weight: 700;
   color: #229;
 }
 
 .subtitle {
   text-align: center;
+  font-weight: 400;
   color: #78a;
-  font-size: 1.2em;
 }
 
 .body {
   padding-bottom: 20px;
 }
 
-@media screen and (min-width: 6000px) {
-  .title {
-    font-size: 2.5em;
-  }
+.body h1 {
+  padding-top: 1.2em;
+  border-top: 1px solid #abf;
+}
 
-  .subtitle {
-    font-size: 1.2em;
-  }
+.body h1,
+.body h2,
+.body h3,
+.body h4,
+.body h5,
+.body h6 {
+  margin: 1.2em 0 0.5em;
+  line-height: 1em;
+  font-weight: 400;
 }

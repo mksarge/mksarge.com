@@ -27,7 +27,7 @@ class Post extends React.Component {
         <hr />
         <h1 className={css.title}>{this.state.post.title}</h1>
         <p className={css.subtitle}>{this.state.post.subtitle}</p>
-        <hr />
+        <br />
         <div className={css.body} dangerouslySetInnerHTML={{ __html: this.state.post.html }} />
         <p className={css.date}>Posted on {this.state.post.formattedDate}.</p>
       </Page>
