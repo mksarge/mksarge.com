@@ -32,11 +32,11 @@ const config = {
     {
       name: 'ClassPortal',
       text: 'Course management system',
-      url: 'https://ubc-310-classportal.firebaseapp.com',
+      url: 'https://ubc-classportal.firebaseapp.com',
     },
     {
       name: 'React Starter App',
-      text: 'Static React frontend boilerplate',
+      text: 'Static React boilerplate',
       url: 'https://react-starter-app.firebaseapp.com/',
     },
     {
