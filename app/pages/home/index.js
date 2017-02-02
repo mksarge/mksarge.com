@@ -7,20 +7,20 @@ import config from '../../config';
 
 const renderPosts = () => posts.slice(0, 3).map((post) => (
   <li key={post.url}>
-    <h5 className={css.link}>
+    <p className={css.link}>
       <Link to={`/blog/${post.url}`}>{post.title}</Link>
-    </h5>
-    <h6 className={css.subtext}>{post.formattedDate}</h6>
+    </p>
+    <p className={css.subtext}>{post.formattedDate}</p>
   </li>));
 
 const renderProjects = () => config.projects.map((project) => (
   <li key={project.url}>
-    <h5 className={css.link}>
+    <p className={css.link}>
       <a href={project.url} target="_blank" rel="noopener noreferrer">
         {project.name}
       </a>
-    </h5>
-    <h6 className={css.subtext}>{project.text}</h6>
+    </p>
+    <p className={css.subtext}>{project.text}</p>
   </li>));
 
 const HomePage = () => (

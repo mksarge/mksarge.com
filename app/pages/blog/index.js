@@ -6,10 +6,10 @@ import posts from '../../posts';
 
 const renderPosts = () => posts.map((post) => (
   <li key={post.url}>
-    <h5 className={css.link}>
+    <p className={css.link}>
       <Link to={`/blog/${post.url}`}>{post.title}</Link>
-    </h5>
-    <h6 className={css.subtext}>{post.formattedDate}</h6>
+    </p>
+    <p className={css.subtext}>{post.formattedDate}</p>
   </li>));
 
 const BlogPage = () => (
