@@ -32,6 +32,8 @@ const config = {
 
   // The entry point for the bundle
   entry: [
+    /* Roboto Fonts */
+    '!!style-loader!css-loader!./public/roboto.min.css',
     /* Reset CSS */
     '!!style-loader!css-loader!./public/index.css',
     /* The main entry point of your JavaScript application */
