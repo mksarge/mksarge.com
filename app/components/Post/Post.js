@@ -21,15 +21,13 @@ class Post extends React.Component {
   render() {
     return (
       <Page title={this.state.post.title}>
-        <div className={css.return}>
-          <Link to="/blog">← All Posts</Link>
-        </div>
+        <Link to="/blog">← All Posts</Link>
+        <p className={css.date}>{this.state.post.formattedDate}</p>
         <hr />
         <h1 className={css.title}>{this.state.post.title}</h1>
-        <p className={css.subtitle}>{this.state.post.subtitle}</p>
-        <br />
+        <p className={css.subtext}>{this.state.post.subtext}</p>
+        <hr />
         <div className={css.body} dangerouslySetInnerHTML={{ __html: this.state.post.html }} />
-        <p className={css.date}>Posted on {this.state.post.formattedDate}.</p>
       </Page>
     );
   }
