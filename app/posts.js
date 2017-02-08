@@ -11,7 +11,7 @@ context.keys().forEach((filename) => {
     {},
     context(filename),
     { url: filename.slice(2, filename.length - 3) },
-    { formattedDate: moment(context(filename).date).format('MMM Do YYYY') },
+    { formattedDate: moment(context(filename).date).format('MMM Do, YYYY') },
   );
   posts.push(post);
 });
