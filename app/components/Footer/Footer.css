@@ -12,7 +12,7 @@
   max-width: 700px;
   padding: 3px 0 0;
   margin: 0 auto;
-  border-top: 1px solid #abf;
+  border-top: 1px solid #cfd8fa;
 }
 
 .text {
@@ -21,7 +21,7 @@
 }
 
 .text a {
-  color: #229;
+  color: #45f;
 }
 
 .image {

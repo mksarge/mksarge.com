@@ -50,7 +50,7 @@ const Header = () => {
     <div className={css.header} >
       <div className={css.container}>
         <div className={css.image}>
-          <img src="assets/profile.png" alt="" />
+          <img src="/assets/profile.png" alt="" />
         </div>
         <div className={css.block}>
           <p>
