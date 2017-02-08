@@ -28,7 +28,7 @@ const HomePage = () => (
     <h1>Recent Posts</h1>
     <ul>
       {renderPosts()}
-      <Link to="/blog">→ View all posts</Link>
+      <Link to="/blog">→ View All</Link>
     </ul>
     <hr />
     <h1>Projects</h1>
