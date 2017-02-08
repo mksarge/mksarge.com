@@ -10,6 +10,7 @@
 
 /* eslint-disable no-console, global-require */
 
+const path = require('path');
 const fs = require('fs');
 const del = require('del');
 const ejs = require('ejs');
@@ -57,11 +58,21 @@ tasks.set('html', () => {
 // Generate sitemap.xml
 // -----------------------------------------------------------------------------
 tasks.set('sitemap', () => {
-  const urls = config.routes.map((x) => ({ loc: x }));
-  const template = fs.readFileSync('./public/sitemap.ejs', 'utf8');
-  const render = ejs.compile(template, { filename: './public/sitemap.ejs' });
-  const output = render({ config, urls });
-  fs.writeFileSync('public/sitemap.xml', output, 'utf8');
+  Promise.resolve()
+    .then(() => {
+      fs.readdirSync('./posts')
+        .filter((filename) => path.extname(filename) === '.md')
+        .forEach((filename) => {
+          config.routes.push(`/blog/${filename.slice(0, filename.length - 3)}`);
+        });
+    })
+    .then(() => {
+      const urls = config.routes.map((x) => ({ loc: x }));
+      const template = fs.readFileSync('./public/sitemap.ejs', 'utf8');
+      const render = ejs.compile(template, { filename: './public/sitemap.ejs' });
+      const output = render({ config, urls });
+      fs.writeFileSync('public/sitemap.xml', output, 'utf8');
+    });
 });
 
 //
