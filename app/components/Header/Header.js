@@ -16,7 +16,7 @@ class IntervalText extends React.Component {
   }
 
   componentWillMount() {
-    const interval = setInterval(this.toggle, 5000);
+    const interval = setInterval(this.toggle, 3000);
     this.setState({ interval });
   }
 

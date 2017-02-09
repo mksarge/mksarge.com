@@ -25,7 +25,7 @@ const config = {
       color: '#f7c',
     },
     {
-      text: 'reading about the latest news in web tech.',
+      text: 'reading about the latest in web tech.',
       color: '#f67',
     },
   ],
