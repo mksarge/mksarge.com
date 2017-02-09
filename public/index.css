@@ -71,19 +71,63 @@ hr {
   background: #cfd8fa;
 }
 
+pre,
+blockquote {
+  margin: 1.5em 10px !important;
+  padding: 10px 15px !important;
+}
+
+blockquote {
+  border-left: solid #cfd8fa 5px;
+  background: #f0f4fa;
+}
+
+pre {
+  border: solid #8af 3px;
+  background: linear-gradient(90deg, #000, #227);
+  border-radius: 10px;
+}
+
 code {
   font-size: 0.9em;
   font-family: 'Courier New', Courier, monospace;
-  background: #f0f4fa;
   white-space: pre-wrap;
 }
 
-pre,
-blockquote {
-  margin: 10px;
-  padding-left: 5px;
-  border-left: solid #cfd8fa 5px;
-  background: #f0f4fa;
+.hljs-comment {
+  color: #8caaff;
+}
+
+.language-js {
+  color: #bfc8da;
+}
+
+.language-js .hljs-attr {
+  color: #e06c75;
+}
+
+.language-js .hljs-string {
+  color: #a9ee8a;
+}
+
+.language-ts {
+  color: #d0a680;
+}
+
+.language-ts .hljs-keyword {
+  color: #e06ce0;
+}
+
+.language-ts .hljs-built_in {
+  color: #56b6c2;
+}
+
+.language-sh {
+  color: #bfc8da;
+}
+
+.language-sh .hljs-string {
+  color: #a9ee8a;
 }
 
 @media screen and (min-width: 600px) {
