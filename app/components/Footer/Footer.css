@@ -10,8 +10,8 @@
 .container {
   width: 90%;
   max-width: 700px;
-  padding: 3px 0 0;
-  margin: 0 auto;
+  margin: 1em auto 0;
+  padding: 0.5em 0;
   border-top: 1px solid #cfd8fa;
 }
 
@@ -22,9 +22,4 @@
 
 .text a {
   color: #45f;
-}
-
-.image {
-  padding: 0 5px;
-  max-height: 24px;
 }
