@@ -1,10 +1,9 @@
 .link {
   display: inline;
-  font-size: 1.1em;
 }
 
 .subtext {
-  display: inline-block;
+  display: inline;
   padding-left: 7px;
   color: #78a;
 }
