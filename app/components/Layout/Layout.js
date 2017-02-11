@@ -3,15 +3,18 @@ import Header from '../Header';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 import css from './Layout.css';
+import { getRootPath } from '../../utils';
 
-const Layout = (props) => (
-  <div className={css.layout} >
-    <Navbar />
-    <Header />
-    {props.children}
-    <Footer />
-  </div>
-);
+const Layout = (props) => {
+  const rootPath = getRootPath();
+  return (
+    <div className={css.layout} >
+      <Navbar path={rootPath} />
+      <Header path={rootPath} />
+      {props.children}
+      <Footer />
+    </div>);
+};
 
 Layout.propTypes = {
   children: PropTypes.node,

@@ -1,13 +1,14 @@
 .header {
-  padding: 10px 0 20px;
-  text-align: center;
+  padding: 10px 0;
   background: linear-gradient(90deg, #000, #45a);
+  transition: padding 0.5s;
 }
 
 .container {
   width: 90%;
   max-width: 700px;
   margin: 0 auto;
+  padding-bottom: 10px;
 }
 
 .image {
@@ -16,46 +17,37 @@
   margin: 0 15px 0 10px;
 }
 
-.image img {
-  width: inherit;
-}
-
-.block {
-  text-align: left;
-}
-
-.block p {
+.text {
   display: inline;
   line-height: 1.3em;
-  font-size: 1.2em;
-  color: #f0f4fa;
+  font-weight: 300;
+  color: #e0e4fa;
 }
 
-.block a {
+.text a {
   text-decoration: none;
   line-height: 1.3em;
   color: #ddf;
 }
 
-.block a:hover {
+.text a:hover {
   text-decoration: underline;
 }
 
 @media screen and (min-width: 450px) {
   .header {
-    padding: 15px 0 30px;
+    padding: 15px 0;
   }
 }
 
 @media screen and (min-width: 600px) {
   .header {
-    padding: 20px 0 35px;
+    padding: 20px 0;
   }
 }
 
 @media screen and (min-width: 980px) {
   .header {
-    transition: padding 0.5s;
-    padding: 25px 0 40px;
+    padding: 25px 0;
   }
 }
