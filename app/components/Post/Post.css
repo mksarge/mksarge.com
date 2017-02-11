@@ -6,7 +6,9 @@
 
 .title {
   text-align: center;
+  line-height: 1.3em;
   font-weight: 700;
+  padding-bottom: 0.5em;
   color: #229;
 }
 
@@ -21,14 +23,17 @@
 }
 
 .body {
-  padding-bottom: 20px;
-  font-size: 0.92em;
+  margin-bottom: 1em;
 }
 
 .body p,
 .body a,
 .body li {
   line-height: 1.3em;
+}
+
+.body strong {
+  font-weight: 400;
 }
 
 .body h1 {
