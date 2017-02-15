@@ -1,5 +1,5 @@
 .header {
-  padding: 10px 0;
+  padding: 10px 0 15px;
   background: linear-gradient(90deg, #000, #45a);
   transition: padding 0.5s;
 }
@@ -36,18 +36,18 @@
 
 @media screen and (min-width: 450px) {
   .header {
-    padding: 15px 0;
+    padding: 15px 0 20px;
   }
 }
 
 @media screen and (min-width: 600px) {
   .header {
-    padding: 20px 0;
+    padding: 20px 0 25px;
   }
 }
 
 @media screen and (min-width: 980px) {
   .header {
-    padding: 25px 0;
+    padding: 25px 0 30px;
   }
 }
