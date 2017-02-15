@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router';
 import Page from '../../components/Page';
-import ListItem from '../../components/ListItem';
+import css from '../home/index.css';
 import posts from '../../posts';
 
 const renderPosts = posts.map((post) => (
-  <ListItem key={post.url} subtext={post.formattedDate} >
-    <Link to={`/blog/${post.url}`}>{post.title}</Link>
-  </ListItem>));
+  <li key={post.url}>
+    <h5 className={css.link}><Link to={`/blog/${post.url}`}>{post.title}</Link></h5>
+    <p className={css.date}>{post.formattedDate}</p>
+  </li>));
 
 const BlogPage = () => (
   <Page title="Blog">

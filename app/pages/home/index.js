@@ -1,42 +1,34 @@
 import React from 'react';
 import { Link } from 'react-router';
 import Page from '../../components/Page';
-import ListItem from '../../components/ListItem';
+import css from './index.css';
 import posts from '../../posts';
 import config from '../../config';
 
 const renderPosts = posts.slice(0, 3).map((post) => (
-  <ListItem key={post.url} subtext={post.formattedDate} >
-    <Link to={`/blog/${post.url}`}>{post.title}</Link>
-  </ListItem>));
+  <li key={post.url}>
+    <h5 className={css.link}><Link to={`/blog/${post.url}`}>{post.title}</Link></h5>
+    <p className={css.date}>{post.formattedDate}</p>
+  </li>));
 
-const renderWork = config.projects.slice(0, 1).map((project) => (
-  <ListItem key={project.url} subtext={project.text} >
-    <a href={project.url} target="_blank" rel="noopener noreferrer">{project.name}</a>
-  </ListItem>));
-
-const renderProjects = config.projects.slice(1).map((project) => (
-  <ListItem key={project.url} subtext={project.text} >
-    <a href={project.url} target="_blank" rel="noopener noreferrer">{project.name}</a>
-  </ListItem>));
+const renderProjects = config.projects.map((project) => (
+  <li key={project.url}>
+    <h5 className={css.link}><a href={project.url} target="_blank" rel="noopener noreferrer">{project.name}</a></h5>
+    <p className={css.description}>{project.text}</p>
+  </li>));
 
 const HomePage = () => (
   <Page title="Home">
-    <h2>Recent Posts</h2>
+    <h2 className={css.heading}>Recent Posts</h2>
+    <Link to="/blog">» View All</Link>
     <ul>
       {renderPosts}
-      <Link to="/blog">→ View All</Link>
     </ul>
     <hr />
-    <h2>Work</h2>
-    <ul>
-      {renderWork}
-    </ul>
-    <hr />
-    <h2>Open Source</h2>
+    <h2 className={css.heading}>Open Source</h2>
+    <a href={config.github} target="_blank" rel="noopener noreferrer">» View All</a>
     <ul>
       {renderProjects}
-      <a href={config.github} target="_blank" rel="noopener noreferrer">→ View All</a>
     </ul>
   </Page>
 );

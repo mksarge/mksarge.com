@@ -32,17 +32,17 @@ const config = {
   projects: [
     {
       name: 'ClassPortal',
-      text: 'Course management system',
+      text: 'Course management system built at the University of British Columbia',
       url: 'https://ubc-classportal.firebaseapp.com',
     },
     {
       name: 'React Starter App',
-      text: 'Static React boilerplate',
+      text: 'Static, SPA React boilerplate with build, test, and deploy tooling',
       url: 'https://react-starter-app.firebaseapp.com/',
     },
     {
-      name: 'Node-TypeScript-Restify-Mongoose',
-      text: 'Node.js REST API boilerplate',
+      name: 'TypeScript Restify Mongoose Starter',
+      text: 'Node.js REST API boilerplate built with TypeScript, Restify, & Mongoose',
       url: 'https://github.com/mksarge/node-typescript-restify-mongoose',
     },
   ],
