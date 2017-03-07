@@ -20,6 +20,10 @@
   color: #229;
 }
 
-.text a {
+.link {
+  margin: 0 2px;
+  padding: 0 7px;
+  background: #d0e0ff;
   color: #45f;
+  border-radius: 5px;
 }

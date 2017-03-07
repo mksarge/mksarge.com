@@ -5,8 +5,8 @@ const config = {
   name: 'Michael Sargent',
   source: 'https://github.com/mksarge/mksarge.com',
   github: 'https://github.com/mksarge',
-  twitter: 'https://twitter.com/michaelksargent',
-  email: 'michael-sargent@hotmail.com',
+  twitter: 'https://twitter.com/michaelksarge',
+  email: 'mailto:michael-sargent@hotmail.com',
   routes: [
     { path: '/', name: 'home' },
     { path: '/blog', name: 'blog' },
@@ -37,12 +37,12 @@ const config = {
     },
     {
       name: 'React Starter App',
-      text: 'Static, SPA React boilerplate with build, test, and deploy tooling',
+      text: 'Static React boilerplate with modern build, test, and deploy tooling',
       url: 'https://react-starter-app.firebaseapp.com/',
     },
     {
       name: 'TypeScript Restify Mongoose Starter',
-      text: 'Node.js REST API boilerplate built with TypeScript, Restify, & Mongoose',
+      text: 'Node.js API boilerplate built with TypeScript, Restify, and Mongoose',
       url: 'https://github.com/mksarge/node-typescript-restify-mongoose',
     },
   ],

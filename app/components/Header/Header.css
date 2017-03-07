@@ -1,7 +1,6 @@
 .header {
   padding: 10px 0 15px;
   background: linear-gradient(90deg, #000, #45a);
-  transition: padding 0.5s;
 }
 
 .container {

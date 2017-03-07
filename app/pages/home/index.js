@@ -25,7 +25,7 @@ const HomePage = () => (
       {renderPosts}
     </ul>
     <hr />
-    <h2 className={css.heading}>Open Source</h2>
+    <h2 className={css.heading}>Projects</h2>
     <a href={config.github} target="_blank" rel="noopener noreferrer">» View All</a>
     <ul>
       {renderProjects}
