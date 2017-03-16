@@ -12,7 +12,7 @@ const Navbar = (props) => (
             key={link.name}
             className={css.navblock}
             to={link.path}
-            style={props.path === link.name
+            style={(props.path === link.name) || (`/${props.path}` === link.path)
               ? { background: 'rgba(255, 255, 255, 0.2)' }
               : {}}
           >{link.name}

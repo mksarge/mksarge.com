@@ -9,7 +9,7 @@ const config = {
   email: 'mailto:michael-sargent@hotmail.com',
   routes: [
     { path: '/', name: 'home' },
-    { path: '/blog', name: 'blog' },
+    { path: '/blog', name: 'writing' },
   ],
   headerText: [
     {
