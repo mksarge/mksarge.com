@@ -3,18 +3,26 @@
   padding-right: 10px;
 }
 
+.listItem {
+  margin-bottom: 5px;
+}
+
 .link {
   display: inline;
+  padding-right: 7px;
+}
+
+.link,
+.link a {
+  line-height: 1.5em;
 }
 
 .date {
   display: inline-block;
-  padding-left: 7px;
   color: #78a;
 }
 
 .description {
   display: inline;
-  padding-left: 7px;
   color: #78a;
 }

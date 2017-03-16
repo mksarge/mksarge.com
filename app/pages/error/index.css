@@ -10,7 +10,7 @@
   margin-bottom: 20px;
   padding: 20px;
   background: #f0f4fa;
-  border: 2px solid #ddf;
+  border: 1px solid #ddf;
   border-radius: 10px;
 }
 
@@ -19,12 +19,12 @@
   line-height: 1em;
   font-size: 2.5em;
   font-weight: 500;
-  color: #237;
+  color: #458;
 }
 
 .status h2 {
   line-height: 1em;
-  color: #237;
+  color: #458;
 }
 
 .fakeLink {
