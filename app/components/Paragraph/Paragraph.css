@@ -1,0 +1,36 @@
+.paragraph {
+  padding: 12px;
+  margin-bottom: 20px;
+  background: #f0f4fa;
+  border-radius: 10px;
+  border: 1px solid #ddf;
+}
+
+.icon {
+  display: inline;
+  vertical-align: top;
+  position: relative;
+  height: 22px;
+  margin-right: 5px;
+}
+
+.title {
+  color: #458;
+  line-height: 1.2em;
+  border-bottom: 1px solid #e6461a;
+  margin-bottom: 0.5em;
+}
+
+.text a {
+  font-weight: 300;
+}
+
+.text u {
+  text-decoration-color: #e6461a;
+}
+
+@media screen and (min-width: 450px) {
+  .paragraph {
+    padding: 20px;
+  }
+}
