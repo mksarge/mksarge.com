@@ -20,7 +20,7 @@ const config = {
       color: '#f90',
     },
     {
-      text: 'living in beautiful Vancouver, BC.',
+      text: 'living in beautiful Vancouver, British Columbia.',
       color: '#7ea',
     },
     {
@@ -28,7 +28,7 @@ const config = {
       color: '#f7c',
     },
     {
-      text: 'reading about the latest in web tech.',
+      text: 'reading about the latest in web development.',
       color: '#f67',
     },
   ],
