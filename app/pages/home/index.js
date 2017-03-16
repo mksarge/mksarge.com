@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import Page from '../../components/Page';
 import css from './index.css';
-import { config, posts } from '../../../config';
+import { config, posts, projects } from '../../../config';
 
 const renderPosts = posts.slice(0, 3).map((post) => (
   <li key={post.url}>
@@ -10,7 +10,7 @@ const renderPosts = posts.slice(0, 3).map((post) => (
     <p className={css.date}>{post.formattedDate}</p>
   </li>));
 
-const renderProjects = config.projects.map((project) => (
+const renderProjects = projects.map((project) => (
   <li key={project.url}>
     <h5 className={css.link}><a href={project.url} target="_blank" rel="noopener noreferrer">{project.name}</a></h5>
     <p className={css.description}>{project.text}</p>
