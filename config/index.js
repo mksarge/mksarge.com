@@ -1,5 +1,6 @@
 import posts from './posts';
 import projects from './projects';
+import resume from './resume';
 
 const config = {
   name: 'Michael Sargent',
@@ -11,6 +12,7 @@ const config = {
     { path: '/', name: 'home' },
     { path: '/blog', name: 'writing' },
     { path: '/projects', name: 'projects' },
+    { path: '/resume', name: 'resume' },
   ],
   headerText: [
     {
@@ -32,4 +34,4 @@ const config = {
   ],
 };
 
-export { config, posts, projects };
+export { config, posts, projects, resume };

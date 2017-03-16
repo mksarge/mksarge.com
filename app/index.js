@@ -7,6 +7,7 @@ import Post from './components/Post';
 import HomePage from './pages/home';
 import BlogPage from './pages/blog';
 import ProjectsPage from './pages/projects';
+import ResumePage from './pages/resume';
 import ErrorPage from './pages/error';
 
 render(
@@ -17,7 +18,8 @@ render(
         <IndexRoute component={BlogPage} />
         <Route path=":postId" component={Post} />
       </Route>
-      <Route path="/projects" component={ProjectsPage} />
+      <Route path="projects" component={ProjectsPage} />
+      <Route path="resume" component={ResumePage} />
       <Route path="*" component={ErrorPage} />
     </Route>
   </Router>,
