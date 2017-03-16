@@ -23,7 +23,7 @@ const config = {
   trackingID: '',
   routes: [
     '/',
-    '/blog',
+    '/posts',
   ],
 };
 
@@ -63,7 +63,7 @@ tasks.set('sitemap', () => {
       fs.readdirSync('./posts')
         .filter((filename) => path.extname(filename) === '.md')
         .forEach((filename) => {
-          config.routes.push(`/blog/${filename.slice(0, filename.length - 3)}`);
+          config.routes.push(`/posts/${filename.slice(0, filename.length - 3)}`);
         });
     })
     .then(() => {

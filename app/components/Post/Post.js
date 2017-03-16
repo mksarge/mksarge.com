@@ -11,15 +11,15 @@ class Post extends React.Component {
   }
 
   componentWillMount() {
-    // load the blog post from the url, else redirect to /blog
+    // load the blog post from the url, else redirect to /posts
     const post = posts.find((val) => val.url === this.props.params.postId);
-    (!post) ? browserHistory.push('/blog') : this.setState({ post }); // eslint-disable-line no-unused-expressions
+    (!post) ? browserHistory.push('/posts') : this.setState({ post }); // eslint-disable-line no-unused-expressions
   }
 
   render() {
     return (
       <Page title={this.state.post.title}>
-        <Link to="/blog">← All Posts</Link>
+        <Link to="/posts">← All Posts</Link>
         <p className={css.date}>{this.state.post.formattedDate}</p>
         <hr />
         <h1 className={css.title}>{this.state.post.title}</h1>

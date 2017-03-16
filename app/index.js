@@ -5,7 +5,7 @@ import FastClick from 'fastclick';
 import Layout from './components/Layout';
 import Post from './components/Post';
 import HomePage from './pages/home';
-import BlogPage from './pages/blog';
+import PostsPage from './pages/posts';
 import ProjectsPage from './pages/projects';
 import ResumePage from './pages/resume';
 import ErrorPage from './pages/error';
@@ -14,8 +14,8 @@ render(
   <Router history={browserHistory}>
     <Route path="/" component={Layout}>
       <IndexRoute component={HomePage} />
-      <Route path="blog" >
-        <IndexRoute component={BlogPage} />
+      <Route path="posts" >
+        <IndexRoute component={PostsPage} />
         <Route path=":postId" component={Post} />
       </Route>
       <Route path="projects" component={ProjectsPage} />

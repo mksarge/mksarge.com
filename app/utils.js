@@ -3,7 +3,7 @@ import { browserHistory } from 'react-router';
 /**
  * Returns a formatted 'root path' from the current location.
  * Ex. '/' => 'home'
- * Ex. '/blog/post1' => 'blog'
+ * Ex. '/posts/post1' => 'posts'
  * @returns {string}
  */
 const getRootPath = () => {

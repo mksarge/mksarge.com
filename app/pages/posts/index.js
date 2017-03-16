@@ -6,11 +6,11 @@ import { posts } from '../../../config';
 
 const renderPosts = posts.map((post) => (
   <li key={post.url}>
-    <h5 className={css.link}><Link to={`/blog/${post.url}`}>{post.title}</Link></h5>
+    <h5 className={css.link}><Link to={`/posts/${post.url}`}>{post.title}</Link></h5>
     <p className={css.date}>{post.formattedDate}</p>
   </li>));
 
-const BlogPage = () => (
+const PostsPage = () => (
   <Page title="Blog">
     <h2>All Posts</h2>
     <ul>
@@ -19,4 +19,4 @@ const BlogPage = () => (
   </Page>
 );
 
-export default BlogPage;
+export default PostsPage;
