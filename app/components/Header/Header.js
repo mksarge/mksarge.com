@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import TextCarousel from './TextCarousel';
 import css from './Header.css';
-import config from '../../config';
+import { config } from '../../../config';
 
 import profileIcon from './icons/profile.png';
 import githubIcon from './icons/github.svg';

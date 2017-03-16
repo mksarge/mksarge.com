@@ -1,7 +1,6 @@
-const env = process.env.NODE_ENV || 'development';
+import posts from './posts';
 
 const config = {
-  env,
   name: 'Michael Sargent',
   source: 'https://github.com/mksarge/mksarge.com',
   github: 'https://github.com/mksarge',
@@ -48,4 +47,4 @@ const config = {
   ],
 };
 
-export default config;
+export { config, posts };
