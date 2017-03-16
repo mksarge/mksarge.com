@@ -11,7 +11,7 @@ class Post extends React.Component {
   }
 
   componentWillMount() {
-    // load the blog post from the url, else redirect to /posts
+    // load the post post from the url, else redirect to /post
     const post = posts.find((val) => val.url === this.props.params.postId);
     (!post) ? browserHistory.push('/posts') : this.setState({ post }); // eslint-disable-line no-unused-expressions
   }
@@ -19,13 +19,15 @@ class Post extends React.Component {
   render() {
     return (
       <Page title={this.state.post.title}>
-        <Link to="/posts">← All Posts</Link>
-        <p className={css.date}>{this.state.post.formattedDate}</p>
-        <hr />
-        <h1 className={css.title}>{this.state.post.title}</h1>
-        <h6 className={css.subtext}>{this.state.post.subtext}</h6>
-        <hr />
-        <div className={css.body} dangerouslySetInnerHTML={{ __html: this.state.post.html }} />
+        <div className={css.post}>
+          <Link to="/posts">« All Posts</Link>
+          <p className={css.date}>{this.state.post.formattedDate}</p>
+          <hr />
+          <h1 className={css.title}>{this.state.post.title}</h1>
+          <h6 className={css.subtext}>{this.state.post.subtext}</h6>
+          <hr />
+          <div className={css.body} dangerouslySetInnerHTML={{ __html: this.state.post.html }} />
+        </div>
       </Page>
     );
   }

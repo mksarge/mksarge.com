@@ -1,3 +1,9 @@
+.post {
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddf;
+}
+
 .date {
   float: right;
   font-weight: 400;
@@ -5,9 +11,11 @@
 }
 
 .title {
+  margin: 0 auto;
+  max-width: 500px;
   text-align: center;
   line-height: 1.3em;
-  font-weight: 700;
+  font-weight: 500;
   padding-bottom: 0.5em;
   color: #229;
 }
@@ -32,6 +40,16 @@
   line-height: 1.3em;
 }
 
+.body p a {
+  font-weight: 300;
+}
+
+.body p,
+.body ul {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
 .body h1 {
   margin-bottom: 1em;
   text-align: center;
@@ -44,6 +62,21 @@
 .body h4,
 .body h5,
 .body h6 {
+  font-weight: 400;
+  margin-top: 0.5em;
+}
+
+.body h2 {
   margin-top: 1em;
-  font-weight: 500;
+  line-height: 1.2em;
+  border-bottom: 1px solid #ddf;
+}
+
+.body img {
+  width: 100%;
+}
+
+.headerImg {
+  width: 100%;
+  padding-bottom: 20px;
 }
