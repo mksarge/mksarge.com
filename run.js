@@ -8,7 +8,7 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
-/* eslint-disable no-console, global-require */
+/* eslint-disable global-require */
 
 const path = require('path');
 const fs = require('fs');
@@ -21,15 +21,11 @@ const config = {
   url: 'https://mksarge.com',
   project: 'mksarge-personal',
   trackingID: '',
-  routes: [
-    '/',
-    '/posts',
-    '/projects',
-    '/resume',
-  ],
+  routes: require('./config/config.json').routes,
+  postsDir: './data/posts',
 };
 
-const tasks = new Map(); // The collection of automation tasks ('clean', 'build', 'publish', etc.)
+const tasks = new Map();
 
 function run(task) {
   const start = new Date();
@@ -62,14 +58,14 @@ tasks.set('html', () => {
 tasks.set('sitemap', () => {
   Promise.resolve()
     .then(() => {
-      fs.readdirSync('./config/posts/markdown')
+      fs.readdirSync(config.postsDir)
         .filter((filename) => path.extname(filename) === '.md')
         .forEach((filename) => {
-          config.routes.push(`/posts/${filename.slice(0, filename.length - 3)}`);
+          config.routes.push({ path: `/posts/${filename.slice(0, filename.length - 3)}` });
         });
     })
     .then(() => {
-      const urls = config.routes.map((x) => ({ loc: x }));
+      const urls = config.routes.map((x) => ({ loc: x.path }));
       const template = fs.readFileSync('./public/sitemap.ejs', 'utf8');
       const render = ejs.compile(template, { filename: './public/sitemap.ejs' });
       const output = render({ config, urls });

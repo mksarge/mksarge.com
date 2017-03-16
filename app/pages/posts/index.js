@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import Page from '../../components/Page';
 import css from './index.css';
-import { posts } from '../../../config';
+import posts from '../../../config/posts';
 
 const PostsIndex = () => (
   <Page title="Posts">

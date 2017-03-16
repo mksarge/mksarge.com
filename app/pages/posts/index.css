@@ -1,0 +1,18 @@
+.heading {
+  display: inline-block;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
+.listItem {
+  margin-bottom: 5px;
+}
+
+.link,
+.link a {
+  line-height: 1.5em;
+}
+
+.date {
+  color: #78a;
+}

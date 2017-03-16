@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router';
 import Page from '../../components/Page';
 import css from './index.css';
-import { posts, projects } from '../../../config';
+import posts from '../../../config/posts';
+import projects from '../../../config/projects';
 
 const renderPosts = posts.slice(0, 3).map((post, i) => (
   <li key={i.toString()} className={css.listItem}>
@@ -15,7 +16,7 @@ const renderPosts = posts.slice(0, 3).map((post, i) => (
 const renderProjects = projects.slice(0, 3).map((project, i) => (
   <li key={i.toString()} className={css.listItem}>
     <h5 className={css.link}>
-      <a href={project.url}>{project.name}</a>
+      <a href={project.url}>{project.title}</a>
     </h5>
     <p className={css.description}>{project.description}</p>
   </li>));

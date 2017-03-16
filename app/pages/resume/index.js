@@ -2,7 +2,7 @@ import React from 'react';
 import Page from '../../components/Page';
 import Paragraph from '../../components/Paragraph';
 import css from './index.css';
-import { resume } from '../../../config';
+import resume from '../../../config/resume';
 
 const App = () => (
   <Page title="Resume" >
@@ -13,7 +13,7 @@ const App = () => (
         key={i.toString()}
         icon={paragraph.icon}
         title={paragraph.title}
-        text={paragraph.text}
+        text={paragraph.html}
       />
     ))}
   </Page>

@@ -8,8 +8,6 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
-/* eslint-disable global-require, max-len */
-
 const path = require('path');
 const webpack = require('webpack');
 const AssetsPlugin = require('assets-webpack-plugin');
@@ -17,11 +15,17 @@ const pkg = require('./package.json');
 
 const isDebug = global.DEBUG === false ? false : !process.argv.includes('--release');
 const isVerbose = process.argv.includes('--verbose') || process.argv.includes('-v');
-const useHMR = !!global.HMR; // Hot Module Replacement (HMR)
+const useHMR = !!global.HMR;
 const babelConfig = Object.assign({}, pkg.babel, {
   babelrc: false,
   cacheDirectory: useHMR,
 });
+
+// list all of the directories that need to be babelified here
+const directories = [
+  path.resolve(__dirname, './app'),
+  path.resolve(__dirname, './config'),
+];
 
 // Webpack configuration (main.js => public/dist/main.{hash}.js)
 // http://webpack.github.io/docs/configuration.html
@@ -88,10 +92,7 @@ const config = {
     rules: [
       {
         test: /\.jsx?$/,
-        include: [
-          path.resolve(__dirname, './app'),
-          path.resolve(__dirname, './config'),
-        ],
+        include: directories,
         loader: 'babel-loader',
         options: babelConfig,
       },

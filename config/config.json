@@ -1,0 +1,43 @@
+{
+  "name": "Michael Sargent",
+  "source": "https: //github.com/mksarge/mksarge.com",
+  "github": "https: //github.com/mksarge",
+  "twitter": "https: //twitter.com/michaelksarge",
+  "email": "mailto:michael-sargent@hotmail.com",
+  "routes": [
+    {
+      "path": "/",
+      "name": "home"
+    },
+    {
+      "path": "/posts",
+      "name": "writing"
+    },
+    {
+      "path": "/projects",
+      "name": "projects"
+    },
+    {
+      "path": "/resume",
+      "name": "resume"
+    }
+  ],
+  "headerText": [
+    {
+      "text": "building something cool with React and Node.js.",
+      "color": "#f90"
+    },
+    {
+      "text": "living in beautiful Vancouver, British Columbia.",
+      "color": "#7ea"
+    },
+    {
+      "text": "solving interesting problems for ClassPortal.",
+      "color": "#f7c"
+    },
+    {
+      "text": "reading about the latest in web development.",
+      "color": "#f67"
+    }
+  ]
+}

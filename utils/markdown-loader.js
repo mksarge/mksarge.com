@@ -10,8 +10,6 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
-/* eslint no-unused-expressions: ["error", { "allowShortCircuit": true }] */
-
 const MarkdownIt = require('markdown-it');
 const MarkdownItAnchor = require('markdown-it-anchor');
 const hljs = require('highlight.js');

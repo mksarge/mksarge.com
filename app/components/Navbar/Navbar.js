@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 import css from './Navbar.css';
-import { config } from '../../../config';
+import config from '../../../config/config.json';
 
 const Navbar = (props) => (
   <div className={css.navbar}>

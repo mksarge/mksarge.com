@@ -2,7 +2,8 @@ import React from 'react';
 import Page from '../../components/Page';
 import Paragraph from '../../components/Paragraph';
 import css from './index.css';
-import { config, projects } from '../../../config';
+import config from '../../../config/config.json';
+import projects from '../../../config/projects';
 
 const PostsIndex = () => (
   <Page title="Posts">
@@ -12,8 +13,8 @@ const PostsIndex = () => (
       <Paragraph
         key={i.toString()}
         icon={project.icon}
-        title={project.name}
-        text={project.text}
+        title={project.title}
+        text={project.html}
       />
     ))}
   </Page>
