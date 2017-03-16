@@ -14,7 +14,6 @@
 
 const MarkdownIt = require('markdown-it');
 const MarkdownItAnchor = require('markdown-it-anchor');
-const MarkdownItTableOfContents = require('markdown-it-table-of-contents');
 const hljs = require('highlight.js');
 const fm = require('front-matter');
 
@@ -40,10 +39,6 @@ module.exports = function markdownLoader(source) {
   });
 
   md.use(MarkdownItAnchor);
-  md.use(MarkdownItTableOfContents, {
-    includeLevel: [1, 2, 3],
-  });
-
   const frontmatter = fm(source);
   frontmatter.attributes.html = md.render(frontmatter.body);
 
