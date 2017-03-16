@@ -24,6 +24,8 @@ const config = {
   routes: [
     '/',
     '/posts',
+    '/projects',
+    '/resume',
   ],
 };
 
@@ -60,7 +62,7 @@ tasks.set('html', () => {
 tasks.set('sitemap', () => {
   Promise.resolve()
     .then(() => {
-      fs.readdirSync('./posts')
+      fs.readdirSync('./config/posts/markdown')
         .filter((filename) => path.extname(filename) === '.md')
         .forEach((filename) => {
           config.routes.push(`/posts/${filename.slice(0, filename.length - 3)}`);

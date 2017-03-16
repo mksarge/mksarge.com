@@ -3,7 +3,7 @@ import moment from 'moment';
 const posts = [];
 
 // load posts
-const context = require.context('../posts', false, /\.(md)$/);
+const context = require.context('./markdown', false, /\.(md)$/);
 
 // build posts array
 context.keys().forEach((filename) => {

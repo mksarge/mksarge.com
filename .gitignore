@@ -14,4 +14,5 @@ firebase-debug.log
 public/resume.pdf
 
 # Posts
-/posts
+posts
+config/posts/markdown
