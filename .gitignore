@@ -13,5 +13,8 @@ firebase-debug.log
 # Resume
 public/resume.pdf
 
+# Assets
+public/assets
+
 # Data
 data
