@@ -11,6 +11,7 @@ const renderPosts = posts.slice(0, 3).map((post, i) => (
       <Link to={`/posts/${post.url}`}>{post.title}</Link>
     </h5>
     <p className={css.date}>{post.formattedDate}</p>
+    <p className={css.subtext}>{post.subtext}</p>
   </li>));
 
 const renderProjects = projects.slice(0, 3).map((project, i) => (
@@ -18,7 +19,8 @@ const renderProjects = projects.slice(0, 3).map((project, i) => (
     <h5 className={css.link}>
       <a href={project.url}>{project.title}</a>
     </h5>
-    <p className={css.description}>{project.description}</p>
+    <a className={css.date} href={project.link}>{project.link}</a>
+    <p className={css.subtext}>{project.description}</p>
   </li>));
 
 const HomePage = () => (

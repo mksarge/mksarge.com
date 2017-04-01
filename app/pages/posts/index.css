@@ -5,7 +5,12 @@
 }
 
 .listItem {
-  margin-bottom: 7px;
+  margin-bottom: 15px;
+}
+
+.link {
+  display: inline;
+  padding-right: 7px;
 }
 
 .link,
@@ -14,5 +19,10 @@
 }
 
 .date {
+  display: inline;
+  color: #78f;
+}
+
+.subtext {
   color: #78a;
 }

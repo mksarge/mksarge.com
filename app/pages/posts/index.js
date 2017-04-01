@@ -7,12 +7,12 @@ import posts from '../../../config/posts';
 const PostsIndex = () => (
   <Page title="Posts">
     <h2 className={css.heading}>Posts</h2>
-    <a href="https://gist.github.com/mksarge">» View on GitHub</a>
     <ul>
       {posts.map((post, i) => (
         <li key={i.toString()} className={css.listItem}>
           <h5 className={css.link}><Link to={`/posts/${post.url}`}>{post.title}</Link></h5>
           <p className={css.date}>{post.formattedDate}</p>
+          <p className={css.subtext}>{post.subtext}</p>
         </li>
       ))}
     </ul>

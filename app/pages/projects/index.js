@@ -6,7 +6,7 @@ import config from '../../../config/config.json';
 import projects from '../../../config/projects';
 
 const PostsIndex = () => (
-  <Page title="Posts">
+  <Page title="Projects">
     <h2 className={css.heading}>Projects</h2>
     <a href={config.github}>» View on GitHub</a>
     {projects.map((project, i) => (
