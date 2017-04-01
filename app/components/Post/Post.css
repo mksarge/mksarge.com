@@ -70,6 +70,12 @@
   border-bottom: 1px solid #ddf;
 }
 
-.body > ul {
+.body > ul,
+.body > blockquote > ul {
+  padding-bottom: 0.5em;
+}
+
+.body > ol {
+  padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
