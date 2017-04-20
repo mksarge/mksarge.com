@@ -1,28 +1,24 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { Router, Route, browserHistory, IndexRoute } from 'react-router';
+import { Provider } from 'react-redux';
 import FastClick from 'fastclick';
-import Layout from './components/Layout';
-import Post from './components/Post';
-import HomePage from './pages/home';
-import PostsPage from './pages/posts';
-import ProjectsPage from './pages/projects';
-import ResumePage from './pages/resume';
-import ErrorPage from './pages/error';
+import { createBrowserHistory, startListener, Router } from 'redux-json-router';
+import configureStore from './redux/store';
+import routes from '../config/routes.json';
+
+// create history singleton
+const history = createBrowserHistory();
+
+// configure store with history and default initialState
+const store = configureStore(history);
+
+// dispatch action if history is manually changed (with the navigation buttons or address bar)
+startListener(history, store);
 
 render(
-  <Router history={browserHistory}>
-    <Route path="/" component={Layout}>
-      <IndexRoute component={HomePage} />
-      <Route path="posts" >
-        <IndexRoute component={PostsPage} />
-        <Route path=":postId" component={Post} />
-      </Route>
-      <Route path="projects" component={ProjectsPage} />
-      <Route path="resume" component={ResumePage} />
-      <Route path="*" component={ErrorPage} />
-    </Route>
-  </Router>,
+  <Provider store={store}>
+    <Router routes={routes} />
+  </Provider>,
   document.getElementById('app'));
 
 // Eliminates the 300ms delay between a physical tap and the firing of a

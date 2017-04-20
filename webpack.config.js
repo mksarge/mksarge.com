@@ -22,9 +22,14 @@ const babelConfig = Object.assign({}, pkg.babel, {
 });
 
 // list all of the directories that need to be babelified here
-const directories = [
+const babelifiedDirectories = [
   path.resolve(__dirname, './app'),
   path.resolve(__dirname, './config'),
+];
+
+// .json files to be loaded with routes-loader
+const routesConfig = [
+  path.resolve(__dirname, './config/routes.json'),
 ];
 
 // Webpack configuration (main.js => public/dist/main.{hash}.js)
@@ -92,7 +97,7 @@ const config = {
     rules: [
       {
         test: /\.jsx?$/,
-        include: directories,
+        include: babelifiedDirectories,
         loader: 'babel-loader',
         options: babelConfig,
       },
@@ -121,7 +126,17 @@ const config = {
       },
       {
         test: /\.json$/,
+        exclude: routesConfig,
         loader: 'json-loader',
+      },
+      {
+        test: /\.json$/,
+        include: routesConfig,
+        loader: 'redux-json-router/lib/route-loader',
+        options: {
+          debug: true,
+          chunks: false,
+        },
       },
       {
         test: /\.md$/,

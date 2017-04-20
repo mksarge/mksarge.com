@@ -1,0 +1,30 @@
+[
+  {
+    "path": "/",
+    "page": "../app/pages/home",
+    "chunk": "main"
+  },
+  {
+    "path": "/posts",
+    "page": "../app/pages/posts",
+    "children": [
+      {
+        "path": "/:id",
+        "page": "../app/components/Post"
+      }
+    ]
+  },
+  {
+    "path": "/projects",
+    "page": "../app/pages/projects"
+  },
+  {
+    "path": "/resume",
+    "page": "../app/pages/resume"
+  },
+  {
+    "path": "*",
+    "page": "../app/pages/error",
+    "chunk": "error"
+  }
+]
