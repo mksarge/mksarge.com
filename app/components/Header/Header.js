@@ -26,7 +26,7 @@ const links = [
   },
 ];
 
-const Header = (props) => (props.path === 'home') && (
+const Header = (props) => (props.path === '/') && (
   <div className={css.header} >
     <div className={css.container}>
       <img className={css.image} src={profileIcon} alt="" />

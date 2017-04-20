@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import { Link } from 'react-router';
+import { Link } from 'redux-json-router';
 import css from './Navbar.css';
 import config from '../../../config/config.json';
 
@@ -12,7 +12,7 @@ const Navbar = (props) => (
             key={link.name}
             className={css.navblock}
             to={link.path}
-            style={(props.path === link.name) || (`/${props.path}` === link.path)
+            style={(props.path === link.name) || (props.path === link.path)
               ? { background: 'rgba(255, 255, 255, 0.2)' }
               : {}}
           >{link.name}

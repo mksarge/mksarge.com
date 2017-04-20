@@ -1,0 +1,81 @@
+.post {
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddf;
+}
+
+.date {
+  float: right;
+  font-weight: 400;
+  color: #78f;
+}
+
+.title {
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+  line-height: 1.3em;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+  color: #229;
+}
+
+.subtext {
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+  line-height: 1.3em;
+  font-weight: 400;
+  font-style: italic;
+  color: #78a;
+}
+
+.body p,
+.body a,
+.body li {
+  line-height: 1.3em;
+}
+
+.body p a,
+.body li a {
+  font-weight: 300;
+}
+
+.body p {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.body h1 {
+  padding-bottom: 1em;
+  text-align: center;
+  line-height: 1em;
+  font-weight: 400;
+}
+
+.body h2,
+.body h3,
+.body h4,
+.body h5,
+.body h6 {
+  font-weight: 400;
+  padding-top: 0.5em;
+  line-height: 1.2em;
+}
+
+.body h2 {
+  padding-top: 1em;
+  margin-bottom: 0.3em;
+  line-height: 1.2em;
+  border-bottom: 1px solid #ddf;
+}
+
+.body > ul,
+.body > blockquote > ul {
+  padding-bottom: 0.5em;
+}
+
+.body > ol {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
