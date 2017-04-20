@@ -12,7 +12,10 @@ const Paragraph = ({ icon, title, text }) => (
 );
 
 Paragraph.propTypes = {
-  icon: PropTypes.string,
+  icon: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.bool,
+  ]),
   title: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 };
