@@ -1,3 +1,8 @@
+/**
+ * Adapted from React Static Boilerplate
+ * https://github.com/kriasoft/react-static-boilerplate
+ */
+
 const path = require('path');
 const webpack = require('webpack');
 const AssetsPlugin = require('assets-webpack-plugin');
