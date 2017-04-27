@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import TextCarousel from './TextCarousel';
 import css from './Header.css';
 import config from '../../../config/config.json';
