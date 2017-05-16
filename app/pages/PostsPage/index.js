@@ -4,11 +4,13 @@ import Layout from '../../components/Layout';
 import Page from '../../components/Page';
 import css from './index.css';
 import posts from '../../../config/posts';
+import config from '../../../config/config.json';
 
 const PostsPage = () => (
   <Layout>
     <Page title="Posts">
       <h2 className={css.heading}>Posts</h2>
+      <a href={config.medium}>» View more on Medium</a>
       <ul>
         {posts.map((post, i) => (
           <li key={i.toString()} className={css.listItem}>

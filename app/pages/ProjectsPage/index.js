@@ -10,7 +10,7 @@ const ProjectsPage = () => (
   <Layout>
     <Page title="Projects">
       <h2 className={css.heading}>Projects</h2>
-      <a href={config.github}>» View on GitHub</a>
+      <a href={config.github}>» View more on GitHub</a>
       {projects.map((project, i) => (
         <Paragraph
           key={i.toString()}
