@@ -8,6 +8,7 @@ import profileIcon from './icons/profile.png';
 import githubIcon from './icons/github.svg';
 import twitterIcon from './icons/twitter.svg';
 import emailIcon from './icons/email.svg';
+import mediumIcon from './icons/medium.svg';
 
 const links = [
   {
@@ -21,6 +22,11 @@ const links = [
     alt: 'Twitter',
   },
   {
+    icon: mediumIcon,
+    link: config.medium,
+    alt: 'Medium',
+  },
+  {
     icon: emailIcon,
     link: config.email,
     alt: 'Email',
@@ -28,7 +34,7 @@ const links = [
 ];
 
 const Header = (props) => (props.path === '/') && (
-  <div className={css.header} >
+  <div className={css.background} >
     <div className={css.container}>
       <img className={css.image} src={profileIcon} alt="" />
       <h4 className={css.text}>
@@ -40,8 +46,8 @@ const Header = (props) => (props.path === '/') && (
       <TextCarousel className={css.carousel} input={config.headerText} />
       <div className={css.iconContainer}>
         {links.map((val, i) => (
-          <a key={i.toString()} href={val.link}>
-            <img className={css.icon} src={val.icon} alt={val.alt} />
+          <a className={css.icon} key={i.toString()} href={val.link}>
+            <img src={val.icon} alt={val.alt} />
           </a>
         ))}
       </div>
